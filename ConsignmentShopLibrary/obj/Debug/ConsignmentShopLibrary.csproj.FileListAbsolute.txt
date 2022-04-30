@@ -1,0 +1,12 @@
+C:\Users\dialloi\Documents\Mes Projets\GestionEmail\ConsignmentShopLibrary\bin\Debug\ConsignmentShopLibrary.dll
+C:\Users\dialloi\Documents\Mes Projets\GestionEmail\ConsignmentShopLibrary\bin\Debug\ConsignmentShopLibrary.pdb
+C:\Users\dialloi\Documents\Mes Projets\GestionEmail\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.csprojAssemblyReference.cache
+C:\Users\dialloi\Documents\Mes Projets\GestionEmail\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.csproj.CoreCompileInputs.cache
+C:\Users\dialloi\Documents\Mes Projets\GestionEmail\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.dll
+C:\Users\dialloi\Documents\Mes Projets\GestionEmail\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.pdb
+D:\usb dELL\Document\Doc Perso\Mes Projets\GestionEmail\ConsignmentShopLibrary\bin\Debug\ConsignmentShopLibrary.dll
+D:\usb dELL\Document\Doc Perso\Mes Projets\GestionEmail\ConsignmentShopLibrary\bin\Debug\ConsignmentShopLibrary.pdb
+D:\usb dELL\Document\Doc Perso\Mes Projets\GestionEmail\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.csproj.AssemblyReference.cache
+D:\usb dELL\Document\Doc Perso\Mes Projets\GestionEmail\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.csproj.CoreCompileInputs.cache
+D:\usb dELL\Document\Doc Perso\Mes Projets\GestionEmail\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.dll
+D:\usb dELL\Document\Doc Perso\Mes Projets\GestionEmail\ConsignmentShopLibrary\obj\Debug\ConsignmentShopLibrary.pdb
