@@ -1,0 +1,15 @@
+Être en situation A
+ Etre sur parc
+ Pour les Vo d’origine BB : La dernière évaluation du VO doit être validée.
+ Le Vo doit posséder une évaluation RAC.
+ Tous les documents obligatoires ont une date de réception et sont en état « Conforme »
+ Pour les Vo d’origine BB : les traitements MV1 CDP et MV1 Libretto doivent posséder une date de demande (champ VEHDOC.VDOC_DATE_ENV)
+ Posséder un tarif > 0
+ Pour les Vo d’origine BB : Posséder une facture BB
+
+
+
+
+A410607@dekra-automotivesolutions.com
+
+gestion des bug sur lineos: elmah.axd----> a placer devant l'url qui a genere l'erreur

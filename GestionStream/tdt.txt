@@ -1,0 +1,90 @@
+
+
+
+
+
+
+
+
+---------------------------------------------------------------------------------
+  MemoryStream SaveImage = new MemoryStream();
+            PicBoxImage.Image.Save(SaveImage, ImageFormat.Jpeg);
+            Byte[] ImageByte = SaveImage.GetBuffer();
+            d.Connecter();
+            OdbcConnection maconnexion = new OdbcConnection("DSN=initial catalog=GestionDonnees;data source=L2C9XQN2\\SQLEXPRESS;integrated security=true");
+
+
+            try
+            {
+                maconnexion.Open();
+            }
+            catch
+            {
+
+                MessageBox.Show("Echec de la connexion");
+            }
+            finally
+            {
+                int compteur;
+                OdbcCommand CommandeOdbc = new OdbcCommand("insert into Contact(numcontact,nomcontact,photo) values(@numcontact,@nomcontact,@photo)", maconnexion);
+
+                d.cmd.Parameters.AddWithValue("numcontact", Convert.ToDecimal(TxtNuContact.Text));
+------------------------------------------------------------------------------------------------------------------------
+ try
+            {
+                OpenFileDialog OpenImage = new OpenFileDialog();
+                OpenImage.Title = "Selectionner une image";
+                OpenImage.CheckFileExists = true;
+                OpenImage.InitialDirectory = Application.StartupPath;
+                OpenImage.Filter = "Fichier image (*.BMP; *.JPG; *.GIF)|All files (*.*)|*.*";
+                OpenImage.RestoreDirectory = true;
+                if(OpenImage.ShowDialog()==DialogResult.OK)
+                {
+                    PicBoxImage.Image = (Image)new Bitmap(OpenImage.FileName);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(string.Concat("Erreru", ex.Message));
+            }
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ try
+            {
+                OpenFileDialog TryOpen = new OpenFileDialog
+                {
+                    Title = " Selectionner une photo "
+                };
+                if (TryOpen.ShowDialog() == DialogResult.OK)
+                {
+                    PicBoxImage.ImageLocation = TryOpen.FileName;
+                    cheminImage = TryOpen.FileName;
+                }
+                string maString = TryOpen.FileName;
+                FileInfo InfoImage = new FileInfo(maString);
+                this.m_image = InfoImage.Length;
+                FileStream fileStream = new FileStream(maString, FileMode.Open, FileAccess.Read, FileShare.Read);
+                m_barImage = new byte[Convert.ToInt32(this.m_image)];
+                int iBytesRead = fileStream.Read(m_barImage, 0, Convert.ToInt32(this.m_image));
+                fileStream.Close();
+            }
+            catch (Exception Exc)
+            {
+
+                MessageBox.Show(Exc.Message);
+            }
+
+-------------------------------------------------------------------------------------------------------------------------------------
+ OpenFileDialog OpenFile = new OpenFileDialog()
+                {
+                    Title = " Selectionner un document "
+                };
+                string ConteneurFilaName = OpenFile.FileName;
+                FileInfo InfoImaging = new FileInfo(ConteneurFilaName);
+                OpenFile.Filter = "Audio and Video Files (.AVI)|*.AVI";
+               
+
+-----------------------------------------------------------------------------
+
+System.ArgumentException : 'La chaîne de filtre fournie n'est pas valide. La chaîne de filtre doit contenir une description du filtre, suivie d'une barre verticale (|) et du modèle du filtre. Les chaînes pour les différentes options de filtre doivent également être séparées par la barre verticale. Exemple : "Fichiers texte (*.txt)|*.txt|
